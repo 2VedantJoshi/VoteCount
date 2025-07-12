@@ -1,1 +1,1 @@
-web: gunicorn blockchain_django.wsgi --log-file - 
+web: python manage.py setup_deployment && gunicorn blockchain_django.wsgi --log-file - 
